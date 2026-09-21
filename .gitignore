@@ -1,0 +1,50 @@
+# ===========================================
+# FraudShield .gitignore
+# ===========================================
+
+# ---- Environment / Secrets ----
+.env
+*.env
+.env.local
+.env.*.local
+
+# ---- Java / Maven ----
+fraudshield-backend/target/
+fraudshield-backend/*.jar
+fraudshield-backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.log
+
+# ---- Node / React ----
+fraudshield-frontend/node_modules/
+fraudshield-frontend/dist/
+fraudshield-frontend/.cache/
+
+# ---- Python ----
+fraudshield-ml/__pycache__/
+fraudshield-ml/model/__pycache__/
+fraudshield-ml/**/__pycache__/
+fraudshield-ml/*.pyc
+fraudshield-ml/model/fraud_model.pkl
+*.pyc
+__pycache__/
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Misc ----
+*.swp
+*.swo
+*~
